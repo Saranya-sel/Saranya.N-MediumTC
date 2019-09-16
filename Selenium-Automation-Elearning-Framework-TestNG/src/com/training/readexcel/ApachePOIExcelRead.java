@@ -88,15 +88,15 @@ public class ApachePOIExcelRead {
 		return list1;
 	}
 
-	public static void main(String[] args) {
-		String fileName = "C:\\Users\\SaranyaNATARAJAN\\Desktop\\Test.xlsx";
-		String SheetName="Sheet1";
+	//*public static void main(String[] args) {
+		//String fileName = "C:\\Users\\SaranyaNATARAJAN\\Desktop\\Test.xlsx";
+		//String SheetName="Sheet1";
 		
-		for(String [] temp : new ApachePOIExcelRead().getExcelContent(fileName,SheetName)){
-			for(String  tt : temp){
-				System.out.println(tt);
-			}
-		}
+		//for(String [] temp : new ApachePOIExcelRead().getExcelContent(fileName,SheetName)){
+			//for(String  tt : temp){
+				//System.out.println(tt);//*
+//}*
+		//}
 
-	}
+	//}
 }

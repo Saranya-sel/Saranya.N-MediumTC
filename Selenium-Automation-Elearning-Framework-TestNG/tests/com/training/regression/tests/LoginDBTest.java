@@ -65,7 +65,7 @@ public class LoginDBTest {
 		loginPOM.clickLoginBtn();
 		
 		screenShot.captureScreenShot(userName);
-
+        
 	}
 
 }

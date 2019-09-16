@@ -12,7 +12,7 @@ import com.training.readexcel.ReadExcel;
 public class LoginDataProviders {
 
 	@DataProvider (name = "db-inputs")
-	public Object [][] getDBData() {
+	public  Object [][] getDBData() {
 
 		List<LoginBean> list = new ELearningDAO().getLogins(); 
 		
@@ -30,8 +30,8 @@ public class LoginDataProviders {
 		return result;
 	}
 	
-	@DataProvider(name = "excel-inputs")
-	public Object[][] getExcelData(){
+	@DataProvider (name = "excel-inputs")
+	public static Object[][] getExcelData(){
 		String fileName ="C:\\Users\\SaranyaNATARAJAN\\Desktop\\Test.xlsx"; 
 		String SheetName="Sheet1";
 		return new ApachePOIExcelRead().getExcelContent(fileName,SheetName); 
@@ -40,6 +40,6 @@ public class LoginDataProviders {
 	@DataProvider(name = "xls-inputs")
 	public Object[][] getXLSData(){
 		// ensure you will have the title as first line in the file 
-		return new ReadExcel().getExcelData("C:/Users/Naveen/Desktop/Testing.xls", "Sheet1"); 
+		return new ReadExcel().getExcelData("C:\\Users\\SaranyaNATARAJAN\\Desktop\\Test.xlsx", "Sheet1"); 
 	}
 }

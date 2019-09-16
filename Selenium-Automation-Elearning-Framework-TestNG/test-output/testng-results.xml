@@ -2,22 +2,22 @@
 <testng-results skipped="1" failed="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="81" started-at="2019-09-05T05:38:37Z" finished-at="2019-09-05T05:38:37Z">
+  <suite name="Default suite" duration-ms="119" started-at="2019-09-14T10:33:07Z" finished-at="2019-09-14T10:33:07Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="81" started-at="2019-09-05T05:38:37Z" finished-at="2019-09-05T05:38:37Z">
-      <class name="com.training.regression.tests.LoginExcelTest">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.regression.tests.LoginExcelTest@523884b2]" name="setUpBeforeClass" is-config="true" duration-ms="19" started-at="2019-09-05T11:08:37Z" finished-at="2019-09-05T11:08:37Z">
+    <test name="Default test" duration-ms="119" started-at="2019-09-14T10:33:07Z" finished-at="2019-09-14T10:33:07Z">
+      <class name="com.training.regression.tests.TrainerDBtest">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.regression.tests.TrainerDBtest@523884b2]" name="setUpBeforeClass" is-config="true" duration-ms="36" started-at="2019-09-14T16:03:07Z" finished-at="2019-09-14T16:03:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="SKIP" signature="loginDBTest(java.lang.String, java.lang.String)[pri:0, instance:com.training.regression.tests.LoginExcelTest@523884b2]" name="loginDBTest" duration-ms="0" started-at="2019-09-05T11:08:37Z" data-provider="excel-inputs" finished-at="2019-09-05T11:08:37Z">
+        <test-method status="SKIP" signature="loginDBTest(java.lang.String, java.lang.String)[pri:0, instance:com.training.regression.tests.TrainerDBtest@523884b2]" name="loginDBTest" duration-ms="0" started-at="2019-09-14T16:03:07Z" data-provider="db-inputs" finished-at="2019-09-14T16:03:07Z">
           <exception class="java.lang.RuntimeException">
             <message>
-              <![CDATA[Can't invoke method public java.lang.Object[][] com.training.dataproviders.LoginDataProviders.getExcelData() on this instance of class com.training.regression.tests.LoginExcelTest due to class mismatch]]>
+              <![CDATA[Can't invoke method public java.lang.Object[][] com.training.dataproviders.LoginDataProviders.getDBData() on this instance of class com.training.regression.tests.TrainerDBtest due to class mismatch]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: Can't invoke method public java.lang.Object[][] com.training.dataproviders.LoginDataProviders.getExcelData() on this instance of class com.training.regression.tests.LoginExcelTest due to class mismatch
+              <![CDATA[java.lang.RuntimeException: Can't invoke method public java.lang.Object[][] com.training.dataproviders.LoginDataProviders.getDBData() on this instance of class com.training.regression.tests.TrainerDBtest due to class mismatch
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:89)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:51)
 	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:41)
@@ -49,7 +49,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginDBTest -->
-      </class> <!-- com.training.regression.tests.LoginExcelTest -->
+      </class> <!-- com.training.regression.tests.TrainerDBtest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
